@@ -25,23 +25,23 @@ DELIMITER $$
 --
 CREATE DEFINER=`root`@`localhost` PROCEDURE `Map1` ()  NO SQL
 SELECT map FROM element
-WHERE map = 1$$
+WHERE lvl_number = 1$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `Map2` ()  NO SQL
 SELECT map FROM element
-WHERE map = 2$$
+WHERE lvl_number = 2$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `Map3` ()  NO SQL
 SELECT map FROM element
-WHERE map = 3$$
+WHERE lvl_number = 3$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `Map4` ()  NO SQL
 SELECT map FROM element
-WHERE map = 4$$
+WHERE lvl_number = 4$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `Map5` ()  NO SQL
 SELECT map FROM element
-WHERE map = 5$$
+WHERE lvl_number = 5$$
 
 DELIMITER ;
 
