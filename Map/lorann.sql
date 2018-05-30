@@ -23,10 +23,10 @@ DELIMITER $$
 --
 -- Procédures
 --
-CREATE DEFINER=`root`@`localhost` PROCEDURE `Map1` ()  NO SQL
-SET @mapnb
+CREATE DEFINER=`root`@`localhost` PROCEDURE `Map` (mapnb INT)  NO SQL
 SELECT map FROM element
-WHERE lvl_number = @mapnb
+WHERE lvl_number = mapnb
+$$
 
 DELIMITER ;
 
