@@ -38,7 +38,7 @@ DELIMITER ;
 
 CREATE TABLE `element` (
   `lvl_number` int NOT NULL,
-  `map` varchar(512)
+  `map` varchar(256)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
