@@ -1,0 +1,26 @@
+OTTOTTOTTTTTTTTTTTTO
+I 2I  I     1  O OEI
+I  I     OOO  O O CI
+OO O OO OOOOTTTTTTTO
+IO	   I 	  PI
+O O O OO TOTTTOT OTO
+I O  4I	  I 3 I    I
+I O   I I   I   I  I
+OO OOOOTOTTTOTTTOTTO
+I  O C O C O C O   D
+I    O C O C O C   I
+OTTTTTTTTTTTTTTTTTTO
+
+
+
+Horizontal Border : T
+Vertical Border   : i ( maj )
+Intersect         : 0
+Player Spawn      : P
+Mob               : 1,2,3,4
+Door Lock         : D
+Door Unlock       : U
+Energy Ball       : E
+Coin Bag          : C
+
+MAP 20 x 12
