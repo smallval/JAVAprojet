@@ -1,5 +1,7 @@
 package controller;
 
+
+
 /**
  * <h1>The Interface IController.</h1>
  * 
@@ -8,5 +10,10 @@ package controller;
  */
 public interface IController
 {
+    
 
+     IOrderPerformer getOrderPeformer();
+
+	void start() throws InterruptedException;
+     
 }
