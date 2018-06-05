@@ -21,15 +21,13 @@ SET time_zone = "+00:00";
 -- Base de données :  `lorann`
 --
 
+DELIMITER $$
 --
 -- Procédures
--- 
-
-DELIMITER $$
-
+--
 CREATE DEFINER=`root`@`localhost` PROCEDURE `map` (mapnb INT)  NO SQL
 SELECT id FROM element
-WHERE lvl_number = mapnb;
+WHERE lvl_number = mapnb $$
 
 
 DELIMITER ;
@@ -53,7 +51,7 @@ CREATE TABLE `element` (
 -- Contenu de la table `element`
 --
 
-INSERT INTO `element`  ( `bloc`, `x`,`y`, `lvl_number`, `direction`)
+INSERT INTO `element`  ( `bloc`, `x`,`y`, `lvl_number`)
 	VALUES
 ('o',0,0,1),
 ('o',0,1,1),
@@ -1140,14 +1138,14 @@ INSERT INTO `element`  ( `bloc`, `x`,`y`, `lvl_number`, `direction`)
 ('0',6,2,5),
 ('o',6,3,5),
 ('o',6,4,5),
-('monster',6,5,5),
+('4',6,5,5),
 ('I',6,6,5),
 ('o',6,7,5),
 ('o',6,8,5),
 ('o',6,9,5),
 ('I',6,10,5),
 ('o',6,11,5),
-('monster',6,12,5),
+('3',6,12,5),
 ('o',6,13,5),
 ('I',6,14,5),
 ('o',6,15,5),
