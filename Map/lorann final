@@ -21,10 +21,12 @@ SET time_zone = "+00:00";
 -- Base de données :  `lorann`
 --
 
-DELIMITER $$
 --
 -- Procédures
---
+-- 
+
+DELIMITER $$
+
 CREATE DEFINER=`root`@`localhost` PROCEDURE `map` (mapnb INT)  NO SQL
 SELECT id FROM element
 WHERE lvl_number = mapnb;
