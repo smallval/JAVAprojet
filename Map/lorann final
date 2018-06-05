@@ -26,7 +26,7 @@ DELIMITER $$
 -- Procédures
 --
 CREATE DEFINER=`root`@`localhost` PROCEDURE `map` (mapnb INT)  NO SQL
-SELECT id FROM element
+SELECT bloc FROM element
 WHERE lvl_number = mapnb $$
 
 
@@ -43,7 +43,6 @@ CREATE TABLE IF NOT EXISTS `element` (
   `x` int,
   `y` int,
   `lvl_number` int,
-  `direction` varchar(256) DEFAULT NULL,
   `id` int PRIMARY KEY AUTO_INCREMENT NOT NULL)
   ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
